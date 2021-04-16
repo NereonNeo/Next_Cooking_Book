@@ -1,0 +1,104 @@
+$primary_yellow: #ffd700;
+.card {
+  cursor: pointer;
+  width: 295px;
+  overflow: hidden;
+  border-radius: 25px;
+  // border: 1px solid lavender;
+  margin: 10px;
+  background-color: $primary_yellow;
+  .card__image {
+    position: relative;
+    height: 140px;
+    img {
+      max-width: 100%;
+      border-bottom-right-radius: 30px;
+      transform: rotate(10deg) translate(-2px, -20px);
+      position: absolute;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .card__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 30px 20px 30px;
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &--price {
+      text-align: right;
+      color: white;
+      overflow: hidden;
+      &:hover {
+        transition: 0.2s ease-in;
+        padding: 5px;
+        background-color: white;
+        color: $primary_yellow;
+      }
+    }
+  }
+}
+// ! cards/[id]
+.Card2 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  .img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .title {
+    position: absolute;
+    bottom: 0.5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: $primary_yellow;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  &:hover {
+    .title {
+      background-color: white;
+    }
+    color: $primary_yellow;
+  }
+}
+.backButton {
+  button {
+    padding: 8px 16px;
+    border: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    background-color: $primary_yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      // transform: translate(6px, 0%);
+      transform: translateX(-0.8em);
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

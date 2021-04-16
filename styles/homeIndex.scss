@@ -1,0 +1,67 @@
+.wrap_title {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container,
+.containerformoreinfo {
+  text-align: center;
+  max-width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+}
+.container {
+  .wrap_title {
+    font-weight: 800;
+  }
+  .cards {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+.containerformoreinfo {
+  .wrapInfo {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    &_img {
+      width: 400px;
+      height: 400px;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    &_flexedbuttons {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      button {
+        margin-left: 15px;
+      }
+    }
+    &_instructions {
+      width: 450px;
+      height: 450px;
+      padding: 5px;
+      overflow: auto;
+    }
+  }
+}

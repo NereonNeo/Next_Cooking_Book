@@ -1,0 +1,11 @@
+<p>Name: {element.strMeal}</p>
+              <p>Create in: {element.strArea}</p>
+              <p>Instructions: {element.strInstructions}</p>
+              <img src={element.strMealThumb} alt={element.strMeal} />
+              <div className="backButton">
+                <button>
+                  <a href={element.strYoutube} target="_blank">
+                    Go to Youtube
+                  </a>
+                </button>
+              </div>
