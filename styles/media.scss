@@ -12,6 +12,9 @@
   .wrapInfo {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .wrapInfo_instructions {
+    grid-column: 1/3;
+  }
 }
 @media only screen and (max-width: 697px) {
   .wrapInfo {
@@ -19,6 +22,9 @@
     .wrapInfo_instructions {
       width: 400px;
     }
+  }
+  .wrapInfo_instructions {
+    grid-column: 1/2;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -29,6 +35,9 @@
     }
     .wrapInfo_instructions {
       width: 300px;
+    }
+    .moreInfoIngredients {
+      margin-bottom: 15px;
     }
   }
 }

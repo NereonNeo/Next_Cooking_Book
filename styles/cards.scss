@@ -1,5 +1,6 @@
 $primary_yellow: #ffd700;
-.card {
+.card,
+.searchCard {
   cursor: pointer;
   width: 295px;
   overflow: hidden;
@@ -18,6 +19,7 @@ $primary_yellow: #ffd700;
       height: 200px;
       object-fit: cover;
       object-position: center;
+      border-radius: 12px;
     }
   }
 

@@ -1,0 +1,40 @@
+.searchCard {
+  img {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+  }
+  h3,
+  p {
+    color: black;
+    position: relative;
+    z-index: 10;
+  }
+}
+.searchCards {
+  width: 295px;
+  position: relative;
+  .img {
+    width: inherit;
+    height: 240px;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .search_info {
+      position: absolute;
+      color: black;
+      top: 80%;
+      width: 100%;
+      height: 48px;
+      background-color: $primary_yellow;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+}

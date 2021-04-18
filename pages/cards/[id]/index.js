@@ -17,6 +17,7 @@ const Card = ({ data, name }) => {
               <Link
                 href="/moreInformation/[id]"
                 as={`/moreInformation/${el.idMeal}`}
+                key={el.idMeal}
               >
                 <div key={el.idMeal}>
                   <div className="Card2 ph1">
@@ -46,7 +47,7 @@ export default Card;
 export const getServerSideProps = async (context) => {
   const name = context.params;
   const res = await fetch(
-    `https://www.themealdb.com/api/json/v1/1/filter.php?c=${context.params.id}`
+    `https://www.themealdb.com/api/json/v1/1/filter.php?c=${name.id}`
   );
   const data = await res.json();
   return {
