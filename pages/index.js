@@ -1,4 +1,5 @@
 import Cards from '../Components/Main/Cards';
+
 export default function Home({ data }) {
   return (
     <div>
@@ -7,7 +8,7 @@ export default function Home({ data }) {
       </div>
       <div className="container">
         <div className="cards">
-          {data.categories.map((el) => {
+          {data?.categories.map((el) => {
             return <Cards data={el} key={el.idCategory} />;
           })}
         </div>

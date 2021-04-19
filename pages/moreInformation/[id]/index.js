@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 const MoreInformation = ({ data }) => {
   console.log(data);
   return (
@@ -16,6 +17,13 @@ const MoreInformation = ({ data }) => {
               <div className="wrapInfo">
                 <div className="wrapInfo_img">
                   <img src={element.strMealThumb} alt={element.strMeal} />
+                  {/* <Image
+                    src={element.strMealThumb}
+                    alt={element.strMeal}
+                    // width={1500}
+                    // height={1500}
+                    layout="fill"
+                  /> */}
                 </div>
                 <div className="wrapInfo_ingredients">
                   <h2>What you need</h2>

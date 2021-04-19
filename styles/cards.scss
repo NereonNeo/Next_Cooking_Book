@@ -84,7 +84,8 @@ $primary_yellow: #ffd700;
     color: $primary_yellow;
   }
 }
-.backButton {
+.backButton,
+.backButtons {
   button {
     padding: 8px 16px;
     border: none;
@@ -95,7 +96,6 @@ $primary_yellow: #ffd700;
     cursor: pointer;
     transition: 0.5s;
     &:hover {
-      // transform: translate(6px, 0%);
       transform: translateX(-0.8em);
     }
     a {

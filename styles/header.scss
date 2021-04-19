@@ -1,7 +1,6 @@
 .header {
   height: 60px;
   width: 100%;
-  // background: linear-gradient(135deg, #65799b 0%, #5e2563 100%);
   background-color: black;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -15,12 +14,7 @@
       cursor: pointer;
       padding-top: 10px;
       font-weight: 600;
-      //   &:hover {
-      //     color: white;
-      //     border-bottom: 2px solid gray;
-      //     border-bottom-left-radius: 2px;
-      //     border-bottom-right-radius: 2px;
-      //   }
+
       a {
         text-decoration: none;
         // color: black;

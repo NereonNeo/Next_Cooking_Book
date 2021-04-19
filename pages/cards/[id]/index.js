@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
+import Image from 'next/image';
 const Card = ({ data, name }) => {
   function handleBack() {
     Router.push('/');
@@ -12,7 +13,7 @@ const Card = ({ data, name }) => {
       </div>
       <div className="container">
         <div className="cards">
-          {data.meals.map((el) => {
+          {data.meals?.map((el) => {
             return (
               <Link
                 href="/moreInformation/[id]"
@@ -24,6 +25,7 @@ const Card = ({ data, name }) => {
                     <div className="overlay">
                       <div className="img">
                         <img src={el.strMealThumb} alt="" />
+                        {/* <Image src={el.strMealThumb} alt="" /> */}
                       </div>
                       <div className="title">
                         <h2 className="title">{el.strMeal}</h2>
