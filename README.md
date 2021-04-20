@@ -1,1 +1,1 @@
-it's just web app about cooking and and cooking recipes 
+it's just web app about cooking and cooking recipes 
